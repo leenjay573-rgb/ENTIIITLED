@@ -14,6 +14,9 @@
 
 <style>
 /* --- 1. CORE & RESET --- */
+html {
+  font-size: min(2.2vw, 18px);
+}
 :root {
   --color-background: #000000;
   --color-red: #cc0000;
@@ -151,7 +154,7 @@ h1 {
   text-shadow: 0 0 10px var(--color-red);
   letter-spacing: 0.25em;
   margin-bottom: clamp(8px, 2vw, 18px);
-  font-size: clamp(1.2em, 4vw, 2.5em);
+  font-size: 2.2rem;
 }
 
 
@@ -162,12 +165,12 @@ h2, h3 {
   margin-top: clamp(18px, 4vw, 35px);
   margin-bottom: clamp(8px, 2vw, 18px);
   letter-spacing: 0.1em;
-  font-size: clamp(1em, 2.5vw, 1.5em);
+  font-size: 1.4rem;
 }
 
 
 p, li {
-  font-size: clamp(0.9em, 1.8vw, 1.15em);
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: clamp(6px, 1vw, 12px);
 }
@@ -317,6 +320,9 @@ a:hover {
 
 /* Responsive adjustments for tablets and below */
 @media (max-width: 1000px) {
+  html {
+    font-size: min(3vw, 17px);
+  }
   .terminal-grid {
     grid-template-columns: 1fr;
     padding: clamp(10px, 6vw, 40px) clamp(4px, 3vw, 24px);
@@ -342,29 +348,18 @@ a:hover {
     max-width: 100vw;
     min-width: 0;
   }
-  h1 {
-    font-size: clamp(1.1em, 6vw, 1.7em);
-  }
-  h2, h3 {
-    font-size: clamp(1em, 4vw, 1.2em);
-  }
-  p, li {
-    font-size: clamp(0.95em, 2.5vw, 1.1em);
-  }
 }
 
 /* Extra small screens (phones) */
 @media (max-width: 600px) {
+  html {
+    font-size: min(4vw, 15px);
+  }
   h1 {
-    font-size: clamp(1em, 8vw, 1.2em);
     letter-spacing: 0.08em;
   }
   h2, h3 {
-    font-size: clamp(0.95em, 5vw, 1.1em);
     letter-spacing: 0.04em;
-  }
-  p, li {
-    font-size: clamp(0.9em, 3vw, 1em);
   }
   .terminal-grid {
     padding: clamp(4px, 4vw, 16px);
